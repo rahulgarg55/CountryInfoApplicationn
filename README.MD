@@ -7,8 +7,4 @@ This project consists of a frontend React application and a backend Node.js serv
 - `frontend/`: Contains the React application
 - `backend/`: Contains the Node.js server
 
-## Setup Instructions
 
-### Frontend
-
-1. Navigate to the frontend directory:
