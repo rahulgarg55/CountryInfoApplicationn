@@ -36,7 +36,7 @@ This project is a comprehensive Country Info Application that allows users to se
 
 2. Install dependencies:
 
-3. Start the development server:
+3. Start the development server: npm start
 
 4. The React application will be available at `http://localhost:3000`
 
