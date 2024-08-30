@@ -1,7 +1,7 @@
 # Country Info Application
 
 This project is a comprehensive Country Info Application that allows users to search for countries and view detailed information about them. It consists of a React frontend and a Node.js backend, providing a seamless user experience for exploring country data.
-
+API documentation available at http://localhost:5000/api-docs
 ## Features
 
 - Search for countries by name
