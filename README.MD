@@ -48,7 +48,7 @@ This project is a comprehensive Country Info Application that allows users to se
 
 3. Create a `.env` file in the backend directory and add necessary environment variables (if any).
 
-4. Start the server:
+4. Start the server:  npm run dev
 
 5. The backend server will be running on `http://localhost:5000` (or the specified port)
 
