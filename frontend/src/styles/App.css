@@ -150,9 +150,18 @@ h1 {
 }
 
 .country-card:hover {
-  transform: translateY(-10px) scale(1.02);
+  transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
+.country-card.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.country-card.active h3 {
+  color: white;
+}
+
 
 .country-card:hover::before {
   opacity: 1;
@@ -184,11 +193,9 @@ h1 {
 
 .country-detail {
   background-color: var(--card-background);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  padding: 40px;
-  margin-top: 40px;
-  transition: var(--transition);
+  box-shadow: none;
+  padding: 20px;
+  margin-top: 0;
 }
 
 .country-detail:hover {
@@ -197,13 +204,8 @@ h1 {
 }
 
 .country-detail img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  margin-bottom: 30px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: var(--transition);
+  height: 150px;
+  margin-bottom: 15px;
 }
 
 .country-detail:hover img {
@@ -211,16 +213,15 @@ h1 {
 }
 
 .country-detail h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
   color: var(--primary-color);
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .country-detail p {
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .country-detail p strong {
