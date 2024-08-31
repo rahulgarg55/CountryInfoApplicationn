@@ -42,9 +42,17 @@ API documentation available at http://localhost:5000/api-docs
 
 ### Backend
 
+
+
 1. Navigate to the backend directory:
 
 2. Install dependencies:
+
+## Installation Backend
+
+Install the dependencies: npm install and npm install dotenv and then you can start backend server by npm run dev or npm start
+
+API documentation available at http://localhost:5000/api-docs
 
 3. Create a `.env` file in the backend directory and add necessary environment variables (if any).
 
