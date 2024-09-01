@@ -1,3 +1,11 @@
+/**
+ * Renders a detailed view of the currently selected country.
+ * 
+ * This component is responsible for displaying the key details of the currently
+ * selected country, including its name, flag, capital, region, subregion,
+ * languages, population, and area. It retrieves the necessary data from the
+ * Redux store and handles loading and error states.
+ */
 import React from 'react';
 import { useSelector } from 'react-redux';
 import LoadingSpinner from './LoadingSpinner';
