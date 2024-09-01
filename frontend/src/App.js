@@ -1,3 +1,10 @@
+/**
+ * The main entry point of the Country Info Application.
+ * This component sets up the Redux store and renders the main application components:
+ * - CountrySearch: Allows the user to search for countries
+ * - CountryList: Displays a list of countries matching the search criteria
+ * - CountryDetail: Displays detailed information about a selected country
+ */
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './redux/store';
