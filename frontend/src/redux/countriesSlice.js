@@ -10,6 +10,19 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { searchCountriesAPI, getCountryDetailsAPI } from '../services/api';
 
+/**
+ * Dispatches an asynchronous action to search for countries based on a provided query string.
+ *
+ * This action creator uses the `createAsyncThunk` function from the Redux Toolkit library to
+ * define an asynchronous action that can handle loading, success, and error states.
+ *
+ * When dispatched, this action will call the `searchCountriesAPI` function (defined elsewhere)
+ * with the provided `query` parameter, and return the response data if the request is successful.
+ * If an error occurs, the action will return the error message.
+ *
+ * @param {string} query - The search query to use when searching for countries.
+ * @returns {Promise<Array<Country>>} - A promise that resolves to an array of country data.
+ */
 export const searchCountries = createAsyncThunk(
   'countries/search',
   async (query, { rejectWithValue }) => {
