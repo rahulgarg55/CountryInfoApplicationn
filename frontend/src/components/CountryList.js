@@ -14,17 +14,26 @@ const CountryList = () => {
 
   if (loading) return <LoadingSpinner />;
   if (error) return <ErrorNotification message={error} />;
-  if (searchPerformed && countries.length === 0){ return <p>No countries found. Try a different search.</p>;}
-  if (!searchPerformed) {
-    return null;
+
+  // If there are countries (either from a search or persisted state), show them
+  if (countries.length > 0) {
+    return (
+      <div className="country-list">
+        {countries.map((country) => (
+          <CountryCard key={country.cca3} country={country} />
+        ))}
+      </div>
+    );
   }
-  return (
-    <div className="country-list">
-      {countries.map((country) => (
-        <CountryCard key={country.cca3} country={country} />
-      ))}
-    </div>
-  );
+
+  // If a search has been performed but no countries found
+  if (searchPerformed && countries.length === 0) {
+    return <p>No countries found</p>;
+  }
+
+  // If no search has been performed and no persisted data, don't show anything
+  return null;
 };
 
 export default CountryList;
+

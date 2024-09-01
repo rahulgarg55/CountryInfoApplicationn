@@ -3,6 +3,10 @@
 This project is a comprehensive Country Info Application that allows users to search for countries and view detailed information about them. It consists of a React frontend and a Node.js backend, providing a seamless user experience for exploring country data.
 API documentation available at http://localhost:5000/api-docs
 
+If you are running project locally both frontend and backend then even upon refreshing the page you will get the data it will not be lost. 
+But in deployed version it will be lost because I have not deployed the backend frontend again.
+So you just can take idea of deployed one from vercel url but proper all workings are there in local version.
+
 
 You Will get Detailed Information for that Particular Company By Clicking on the Box of Searched Company
 ![image](https://github.com/user-attachments/assets/5c00a796-c39a-4fc4-b79b-637f933569bf)
