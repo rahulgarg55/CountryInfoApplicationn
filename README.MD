@@ -20,6 +20,19 @@ You Will get Detailed Information for that Particular Company By Clicking on the
 - `frontend/`: React application
 - `backend/`: Node.js server
 
+## Docker Support
+
+This project includes Docker support for the backend, allowing you to run the server in a containerized environment. Run below command at root of backend folder.
+
+ Build the Docker image:  docker build -t countryinfobackend .
+ 
+This command builds a Docker image named `countryinfobackend` based on the Dockerfile in the current directory.
+
+### Running the Backend with Docker: docker run -p 5000:5000 -d countryinfobackend
+
+To run the backend using the Docker image: docker run -p 5000:5000 -d countryinfobackend
+
+
 ## Technologies Used
 
 ### Frontend
@@ -31,6 +44,7 @@ You Will get Detailed Information for that Particular Company By Clicking on the
 ### Backend
 - Node.js with Express
 - Axios for external API requests
+- Docker
 
 ## Setup Instructions
 
