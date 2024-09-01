@@ -54,6 +54,7 @@ const countriesSlice = createSlice({
     selectedCountry: null,
     loading: false,
     error: null,
+    searchPerformed: false,
   },
   reducers:{
     clearSelectedCountry: (state) => {
@@ -66,6 +67,7 @@ const countriesSlice = createSlice({
         state.loading = true;
         state.error = null;
         state.selectedCountry= null;
+        state.searchPerformed = true; 
       })
       .addCase(searchCountries.fulfilled, (state, action) => {
         state.loading = false;

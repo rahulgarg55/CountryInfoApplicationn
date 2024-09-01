@@ -10,12 +10,14 @@ import LoadingSpinner from './LoadingSpinner';
 import ErrorNotification from './ErrorNotification';
 
 const CountryList = () => {
-  const { countries, loading, error } = useSelector((state) => state.countries);
+  const { countries, loading, error, searchPerformed } = useSelector((state) => state.countries);
 
   if (loading) return <LoadingSpinner />;
   if (error) return <ErrorNotification message={error} />;
-  if (countries.length === 0) return <p>No countries found. Try a different search.</p>;
-
+  if (searchPerformed && countries.length === 0){ return <p>No countries found. Try a different search.</p>;}
+  if (!searchPerformed) {
+    return null;
+  }
   return (
     <div className="country-list">
       {countries.map((country) => (
